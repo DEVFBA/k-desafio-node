@@ -2,4 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-flex-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 10px solid blue;
+}
+
+.container {
+  border: 1px solid black;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp-container {
+  border: 1px solid red;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
