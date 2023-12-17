@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  all: unset;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -37,4 +41,8 @@
 
 .logo-links {
   list-style: none;
+}
+
+.c-link-text {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
