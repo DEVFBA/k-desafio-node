@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -32,4 +33,8 @@
 .links {
   display: flex;
   flex-direction: column;
+}
+
+.logo-links {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
