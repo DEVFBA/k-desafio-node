@@ -64,7 +64,7 @@ body {
 
 .subrayado {
   text-decoration: none;
-  color: black;
+  color: rgb(78, 78, 255);
 }
 
 .subrayado:hover {
@@ -84,4 +84,10 @@ body {
 .buttonLogIn:hover {
   cursor: pointer;
   background-color: #efefef;
+}
+
+.asideFooter {
+  color: #818181;
+  width: 45%;
+  padding: 0px;
 }/*# sourceMappingURL=main.css.map */
