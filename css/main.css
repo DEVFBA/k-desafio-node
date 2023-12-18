@@ -1,4 +1,5 @@
-* {
+body {
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,11 +14,18 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  border: 10px solid blue;
+  border: 1px solid blue;
+}
+
+.left-aside {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .container {
   border: 1px solid black;
+  width: 100%;
 }
 
 .flex-container-column {
@@ -25,11 +33,55 @@
   flex-direction: column;
 }
 
-.temp-container {
-  border: 1px solid red;
-}
-
 .links {
   display: flex;
   flex-direction: column;
+}
+
+.account-card {
+  width: 40%;
+  padding: 16px;
+  background-color: white;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 0px 1px rgba(23, 23, 23, 0.05);
+  border-radius: 8px;
+}
+
+.buttonCreateAcc {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.buttonCreateAcc:hover {
+  background-color: blue;
+  color: white;
+}
+
+.subrayado {
+  text-decoration: none;
+  color: black;
+}
+
+.subrayado:hover {
+  text-decoration-line: underline;
+}
+
+.buttonLogIn {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.buttonLogIn:hover {
+  cursor: pointer;
+  background-color: #efefef;
 }/*# sourceMappingURL=main.css.map */
