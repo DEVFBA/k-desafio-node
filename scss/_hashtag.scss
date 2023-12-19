@@ -1,0 +1,44 @@
+.discuss, .watercooler{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px $border-color;
+    border-radius: 8px;
+    background-color: $bg-discuss;
+    max-width: 325px;
+    margin: 5px 0;
+    a{
+        display: flex;
+        flex-direction: column;
+        color: $main-text;
+    }
+
+    a:hover{
+        color: $accent-text;
+    }
+    .discussHeader, .waterHeader{
+        padding: 12px 16px;
+        border-bottom: $border-color solid 1px;
+        p{
+            font-size: 12px;
+        }
+        a{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+    p{
+        color: $secondary-text;
+    }
+    .discussItem{
+        padding: 16px;
+        border-bottom: $border-color solid 1px;
+        p{
+            margin-top: 5px;
+            font-size: 13.5px;
+        }
+    }
+    .separador{
+        height: 10px;
+        background-color: none;
+    }
+}
