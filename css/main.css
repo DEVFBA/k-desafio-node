@@ -10,33 +10,49 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
   justify-content: center;
   background-color: #f5f5f5;
+  max-width: 1280px;
 }
 
 .main-flex-container {
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 .flex-container-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 
 .left-aside {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  max-width: 250px;
+}
+
+.right-aside {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 body {
@@ -57,41 +73,44 @@ body {
 }
 
 .container {
-  border: 1px solid black;
+  border: 1px solid rgb(133, 132, 132);
   width: 100%;
 }
 
 .account-card {
-  width: 40%;
+  width: 100%;
   padding: 16px;
   background-color: white;
   font-family: sans-serif;
   box-shadow: 0px 0px 0px 1px rgba(23, 23, 23, 0.05);
   border-radius: 8px;
+  margin-top: 15px;
+}
+.account-card h2, .account-card p {
+  margin: 20px 0;
 }
 
 .buttonCreateAcc {
   height: 50px;
   width: 100%;
   border-radius: 8px;
-  border: 1px solid blue;
+  border: 1px solid #3B49DF;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
 }
 
 .buttonCreateAcc:hover {
-  background-color: blue;
+  background-color: #3B49DF;
+}
+.buttonCreateAcc:hover a {
   color: white;
+  text-decoration-line: underline;
 }
 
 .subrayado {
   text-decoration: none;
-  color: rgb(78, 78, 255);
-}
-
-.subrayado:hover {
-  text-decoration-line: underline;
+  color: #3B49DF;
 }
 
 .buttonLogIn {
@@ -126,7 +145,9 @@ body {
 .secondary-card {
   border-radius: 10px;
   background-color: #ffffff;
-  width: 80%;
+  width: 96%;
+  padding: 16px;
+  margin-top: 10px;
 }
 .secondary-card .secondary-card-header {
   display: flex;
@@ -147,4 +168,81 @@ body {
 }
 .secondary-card .secondary-card-content p:nth-child(3)::after {
   content: ❤;
+}
+
+.discuss, .watercooler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px #E9E9E9;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  max-width: 100%;
+  margin-top: 15px;
+}
+.discuss a, .watercooler a {
+  display: flex;
+  flex-direction: column;
+  color: #242424;
+}
+.discuss a:hover, .watercooler a:hover {
+  color: #3B49DF;
+}
+.discuss p, .watercooler p {
+  color: #575757;
+}
+
+.discussHeader, .waterHeader {
+  padding: 12px 16px;
+  border-bottom: #E9E9E9 solid 1px;
+}
+.discussHeader p, .waterHeader p {
+  font-size: 12px;
+}
+.discussHeader a, .waterHeader a {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.discussItem {
+  padding: 16px;
+  border-bottom: #E9E9E9 solid 1px;
+}
+.discussItem p {
+  margin-top: 5px;
+  font-size: 13.5px;
+}
+
+.recently {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px #CCCCCC;
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+.recently a {
+  color: #242424;
+  padding: 16px;
+}
+
+.recentlyHeader {
+  display: flex;
+}
+.recentlyHeader h4 {
+  padding: 16px 0;
+}
+
+.recentlyItems {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+}
+.recentlyItems a {
+  width: 100%;
+}
+.recentlyItems a:hover {
+  background-color: #FFFFFF;
+  color: #3B49DF;
 }/*# sourceMappingURL=main.css.map */
