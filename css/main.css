@@ -10,16 +10,61 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
   justify-content: center;
   background-color: #f5f5f5;
+  max-width: 1280px;
 }
 
 .main-flex-container {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-aside {
+  display: flex;
+  max-width: 250px;
+}
+
+.right-aside {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-container-column {
@@ -27,9 +72,66 @@ a {
   flex-direction: column;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
+.container {
+  border: 1px solid rgb(133, 132, 132);
+  width: 100%;
+}
+
+.account-card {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 0px 1px rgba(23, 23, 23, 0.05);
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.account-card h2, .account-card p {
+  margin: 20px 0;
+}
+
+.buttonCreateAcc {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #3B49DF;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.buttonCreateAcc:hover {
+  background-color: #3B49DF;
+}
+.buttonCreateAcc:hover a {
+  color: white;
+  text-decoration-line: underline;
+}
+
+.subrayado {
+  text-decoration: none;
+  color: #3B49DF;
+}
+
+.buttonLogIn {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.buttonLogIn:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.asideFooter {
+  color: #818181;
+  width: 45%;
+  padding: 0px;
 }
 
 .logo-links {
@@ -43,7 +145,9 @@ a {
 .secondary-card {
   border-radius: 10px;
   background-color: #ffffff;
-  width: 80%;
+  width: 96%;
+  padding: 16px;
+  margin-top: 10px;
 }
 .secondary-card .secondary-card-header {
   display: flex;
@@ -69,11 +173,12 @@ a {
 .discuss, .watercooler {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: solid 1px #E9E9E9;
   border-radius: 8px;
   background-color: #FFFFFF;
-  max-width: 325px;
-  margin: 5px 0;
+  max-width: 100%;
+  margin-top: 15px;
 }
 .discuss a, .watercooler a {
   display: flex;
@@ -83,38 +188,36 @@ a {
 .discuss a:hover, .watercooler a:hover {
   color: #3B49DF;
 }
-.discuss .discussHeader, .discuss .waterHeader, .watercooler .discussHeader, .watercooler .waterHeader {
-  padding: 12px 16px;
-  border-bottom: #E9E9E9 solid 1px;
-}
-.discuss .discussHeader p, .discuss .waterHeader p, .watercooler .discussHeader p, .watercooler .waterHeader p {
-  font-size: 12px;
-}
-.discuss .discussHeader a, .discuss .waterHeader a, .watercooler .discussHeader a, .watercooler .waterHeader a {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 .discuss p, .watercooler p {
   color: #575757;
 }
-.discuss .discussItem, .watercooler .discussItem {
+
+.discussHeader, .waterHeader {
+  padding: 12px 16px;
+  border-bottom: #E9E9E9 solid 1px;
+}
+.discussHeader p, .waterHeader p {
+  font-size: 12px;
+}
+.discussHeader a, .waterHeader a {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.discussItem {
   padding: 16px;
   border-bottom: #E9E9E9 solid 1px;
 }
-.discuss .discussItem p, .watercooler .discussItem p {
+.discussItem p {
   margin-top: 5px;
   font-size: 13.5px;
-}
-.discuss .separador, .watercooler .separador {
-  height: 10px;
-  background-color: none;
 }
 
 .recently {
   display: flex;
   flex-direction: column;
   border-bottom: solid 1px #CCCCCC;
-  max-width: 325px;
+  width: 100%;
   margin: 10px 0;
   padding-bottom: 10px;
 }
@@ -122,15 +225,23 @@ a {
   color: #242424;
   padding: 16px;
 }
-.recently h4 {
+
+.recentlyHeader {
+  display: flex;
+}
+.recentlyHeader h4 {
   padding: 16px 0;
 }
 
-.recentlyHeader, .recentlyItems {
+.recentlyItems {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
+  width: 100%;
 }
-
+.recentlyItems a {
+  width: 100%;
+}
 .recentlyItems a:hover {
   background-color: #FFFFFF;
   color: #3B49DF;
