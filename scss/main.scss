@@ -15,8 +15,10 @@ a {
 
 }
 
-.main {
 
+
+
+.main {
     display:flex;
     justify-content: center;
     background-color: #f5f5f5;
@@ -24,7 +26,6 @@ a {
 }
 
 .main-flex-container {
-
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -54,7 +55,18 @@ a {
 
     display: flex;
     flex-direction: column;
+    border: 1px solid blue;
+
 }
 
+.left-aside{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@import "common.scss";
+@import "cardAccount.scss";
 @import "mainLinks";
 @import "secondaryCard";
