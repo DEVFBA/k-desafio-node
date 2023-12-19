@@ -4,3 +4,17 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.links {
+    display: flex;
+    flex-direction: column;
+
+}
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    border: 1px solid black;
+    width: 100%;
+}
+
