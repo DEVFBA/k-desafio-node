@@ -64,4 +64,59 @@ a {
 }
 .secondary-card .secondary-card-content p:nth-child(3)::after {
   content: ❤;
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.input-text {
+  width: 400px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.botton-link {
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login {
+  color: black;
+  margin-right: 20px;
+}
+
+.imagen {
+  width: 50px;
+  height: 30px;
+}
+
+.popular-tags {
+  container: 1px;
+  border: 1px solid gray;
+  border-radius: 1px;
+  padding: 1px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.seccion7 {
+  container: 1px;
+  border: 1px solid gray;
+  border-radius: 1px;
+  padding: 1px;
+  background-color: rgb(182, 178, 178);
+  width: 180px;
+  font-size: 16px;
+}
+.seccion7 a:hover {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */
