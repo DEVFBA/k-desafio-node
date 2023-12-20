@@ -332,4 +332,19 @@ body {
 }
 .seccion7 p {
   margin: 10px 0;
+}
+
+.conteiner-redes {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  height: 40px;
+}
+.conteiner-redes .itemIcono {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.itemIcono:hover {
+  background-color: rgba(54, 67, 211, 0.4666666667);
 }/*# sourceMappingURL=main.css.map */
