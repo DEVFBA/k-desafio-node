@@ -75,6 +75,16 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 776px) {
+  .right-aside, .left-aside {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .right-aside {
+    display: none;
+  }
+}
 .account-card {
   width: 100%;
   padding: 16px;
