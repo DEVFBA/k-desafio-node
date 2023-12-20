@@ -29,7 +29,7 @@ body {
 
 .flex-container-column {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .links {
@@ -51,7 +51,7 @@ body {
 
 .center-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -245,4 +245,14 @@ body {
 .recentlyItems a:hover {
   background-color: #FFFFFF;
   color: #3B49DF;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 96%;
+}
+
+.head img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
