@@ -18,19 +18,21 @@ a {
 body{
     display: flex;
     justify-content: center;
+    background-color: $bgMain;
 }
 
 
 .main {
     display:flex;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: $bgMain;
     max-width: 1280px;
 }
 
 .main-flex-container {
     display: flex;
     justify-content: space-around;
+    background-color: $bgMain;
 }
 
 .container {
@@ -46,12 +48,6 @@ body{
 
 }
 
-.temp-container {
-
-
-
-}
-
 .links {
 
     display: flex;
@@ -62,6 +58,7 @@ body{
 .left-aside{
     display: flex;
     max-width: 250px;
+    background-color: $bgMain;
 }
 
 .right-aside{
@@ -69,12 +66,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $bgMain;
 }
 
 .center-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $bgMain;
 }
 
 @import "common.scss";

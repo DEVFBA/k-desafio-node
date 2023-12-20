@@ -1,4 +1,4 @@
-.recently{
+.recently, .trending{
     display: flex;
     flex-direction: column;
     border-bottom: solid 1px #CCCCCC;
@@ -18,7 +18,7 @@
     }
 }
 
-.recentlyItems{
+.recentlyItems, .trending{
     display: flex;
     flex-direction: column;
     align-items:baseline;
