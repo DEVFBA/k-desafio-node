@@ -16,6 +16,13 @@ body {
   background-color: #F5F5F5;
 }
 
+#mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -58,6 +65,14 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #F5F5F5;
+}
+
+.containerNav {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #E9E9E9;
+  display: flex;
+  justify-content: center;
 }
 
 .account-card {
@@ -113,7 +128,7 @@ body {
 
 .asideFooter {
   color: #818181;
-  width: 45%;
+  width: 100%;
   padding: 0px;
 }
 
@@ -230,11 +245,63 @@ body {
   color: #3B49DF;
 }
 
-.container {
-  border-radius: 10px;
-  width: 96%;
-}
-
 .head img {
   width: 100%;
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+.input-text {
+  width: 400px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.botton-link {
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login {
+  color: black;
+  margin-right: 20px;
+}
+
+.imagen {
+  width: 50px;
+  height: 30px;
+}
+
+.popular-tags {
+  container: 1px;
+  border: 1px solid gray;
+  border-radius: 1px;
+  padding: 1px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.seccion7 {
+  margin: 10px 0;
+  container: 1px;
+  border: 1px solid #E9E9E9;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  width: 100%;
+  font-size: 16px;
+}
+.seccion7 a:hover {
+  color: #3B49DF;
 }/*# sourceMappingURL=main.css.map */
