@@ -31,11 +31,7 @@ a {
 
 }
 
-.container {
 
-
-
-}
 
 .flex-container-column {
 
@@ -56,5 +52,16 @@ a {
     flex-direction: column;
 }
 
+.flex-container-row {
+    display: flex;
+
+}
+
+
+
+
+
+
 @import "mainLinks";
 @import "secondaryCard";
+@import "tarjetaprincipal";

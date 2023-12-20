@@ -32,6 +32,10 @@ a {
   flex-direction: column;
 }
 
+.flex-container-row {
+  display: flex;
+}
+
 .logo-links {
   list-style: none;
 }
@@ -64,4 +68,10 @@ a {
 }
 .secondary-card .secondary-card-content p:nth-child(3)::after {
   content: ❤;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
