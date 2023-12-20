@@ -76,7 +76,7 @@ body {
 }
 
 @media (max-width: 776px) {
-  .right-aside, .left-aside {
+  .right-aside, .left-aside, .login, .input-text {
     display: none;
   }
 }
@@ -272,21 +272,31 @@ body {
 
 .navbar {
   justify-content: space-between;
+  width: 100%;
   max-width: 1280px;
+  padding: 10px;
+  align-items: center;
 }
 
 .input-text {
   width: 400px;
   height: 30px;
-  margin-left: 15px;
-  border-radius: 5px;
-  border-color: gray;
+  margin: 0 15px;
+  border-radius: 8px;
+  border: solid 1px #575757;
+  padding: 16px;
 }
 
 .botton-link {
-  border: 2px solid blue;
+  border: 1px solid #3B49DF;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.botton-link:hover {
+  background-color: #3B49DF;
+  color: white;
+  cursor: pointer;
 }
 
 .login {
@@ -310,7 +320,6 @@ body {
 
 .seccion7 {
   margin: 10px 0;
-  container: 1px;
   border: 1px solid #E9E9E9;
   border-radius: 8px;
   padding: 16px;
@@ -318,6 +327,9 @@ body {
   width: 100%;
   font-size: 16px;
 }
-.seccion7 a:hover {
-  color: #3B49DF;
+.seccion7 h4, .seccion7 h3 {
+  margin: 5px 0;
+}
+.seccion7 p {
+  margin: 10px 0;
 }/*# sourceMappingURL=main.css.map */

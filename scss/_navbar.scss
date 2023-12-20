@@ -4,20 +4,31 @@
 }
 .navbar {
   justify-content: space-between;
+  width: 100%;
   max-width: 1280px;
+  padding: 10px;
+  align-items: center;
 }
 .input-text {
   width: 400px;
   height: 30px;
-  margin-left: 15px;
-  border-radius: 5px;
-  border-color: gray;
+  margin: 0 15px;
+  border-radius: 8px;
+  border: solid 1px $secondary-text;
+  padding: 16px;
 }
 .botton-link {
-  border: 2px solid blue;
+  border: 1px solid $accent-text;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
+
+.botton-link:hover{
+  background-color: $accent-text;
+  color: white;
+  cursor: pointer;
+}
+
 .login {
   color: black;
   margin-right: 20px;
@@ -36,15 +47,16 @@
 }
 .seccion7 {
   margin: 10px 0;
-  container: 1px;
   border: 1px solid $border-color;
   border-radius: 8px;
   padding: 16px;
   background-color: $bg-discuss;
   width: 100%;
   font-size: 16px;
-
-  a:hover {
-    color: $accent-text;
+  h4, h3{
+    margin: 5px 0;
+  }
+  p{
+    margin: 10px 0;
   }
 }
