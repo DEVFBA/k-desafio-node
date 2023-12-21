@@ -433,12 +433,33 @@ body {
 }
 
 .popular-tags {
-  container: 1px;
-  border: 1px solid gray;
-  border-radius: 1px;
-  padding: 1px;
   height: 200px;
   overflow-y: scroll;
+}
+
+.tagCont {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tagCont a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.tagCont:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline;
+  color: rgb(59, 73, 223);
+}
+.tagCont:hover a {
+  text-decoration: none;
+  color: #3B49DF;
 }
 
 .seccion7 {
