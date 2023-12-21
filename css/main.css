@@ -99,12 +99,14 @@ body {
 }
 
 .buttonCreateAcc {
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
   width: 100%;
   border-radius: 8px;
   border: 1px solid #3B49DF;
   text-align: center;
-  line-height: 50px;
   cursor: pointer;
 }
 
@@ -122,18 +124,23 @@ body {
 }
 
 .buttonLogIn {
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
   width: 100%;
   border-radius: 8px;
   text-align: center;
-  line-height: 50px;
   margin-top: 10px;
   cursor: pointer;
 }
 
 .buttonLogIn:hover {
   cursor: pointer;
-  background-color: #efefef;
+  background-color: #EBECFC;
+}
+.buttonLogIn:hover a {
+  text-decoration-line: underline;
 }
 
 .asideFooter {
@@ -150,17 +157,34 @@ body {
   text-align: center;
 }
 
+.links {
+  margin-top: 20px;
+}
+
 .mainlink:hover {
   text-decoration: underline;
-  border-radius: 5px;
-  background-color: #8b93e6;
+  border-radius: 8px;
+  background-color: #EBECFC;
+}
+.mainlink:hover a {
+  color: #3B49DF;
+}
+
+.mainlink {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+.mainlink a {
+  color: #242424;
+  margin-left: 5px;
 }
 
 .secondary-card {
   border-radius: 10px;
   background-color: #ffffff;
   width: 96%;
-  padding: 16px;
+  padding: 16px 60px;
   margin-top: 10px;
 }
 .secondary-card .secondary-card-header {
@@ -261,8 +285,89 @@ body {
   color: #3B49DF;
 }
 
+.principal-card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 96%;
+  margin-top: 10px;
+}
+
 .head img {
   width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.content-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.content-card p {
+  color: #575757;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.content-card h4 {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+.content-card h4:hover {
+  background-color: #E9E9E9;
+}
+
+.content-card2 {
+  padding: 16px 60px;
+  display: flex;
+  flex-direction: column;
+}
+.content-card2 a {
+  max-width: 80%;
+}
+.content-card2 h3 {
+  color: #242424;
+  font-size: 30px;
+}
+
+.logo_image {
+  position: relative;
+  display: inline-block;
+}
+.logo_image img {
+  border-radius: 50%;
+}
+
+.taipy-logo {
+  display: block;
+}
+.taipy-logo img {
+  width: 52px;
+}
+
+.profile {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.profile img {
+  max-width: 20px;
+  border: solid 2px white;
+}
+
+.hashtags {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+.hashtags a {
+  padding: 8px 5px;
+  border-radius: 8px;
+}
+.hashtags a:hover {
+  background-color: #EBECFC;
 }
 
 .container-flex-row {
@@ -274,7 +379,7 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 1280px;
-  padding: 10px;
+  padding: 8px 0;
   align-items: center;
 }
 
@@ -292,21 +397,39 @@ body {
   padding: 10px;
   border-radius: 8px;
 }
+.botton-link a {
+  color: #3B49DF;
+}
 
 .botton-link:hover {
   background-color: #3B49DF;
-  color: white;
   cursor: pointer;
+}
+.botton-link:hover a {
+  text-decoration-line: underline;
+  color: white;
 }
 
 .login {
   color: black;
-  margin-right: 20px;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+.login a {
+  color: #3B49DF;
+}
+
+.login:hover {
+  cursor: pointer;
+  background-color: #EBECFC;
+}
+.login:hover a {
+  text-decoration-line: underline;
 }
 
 .imagen {
-  width: 50px;
-  height: 30px;
+  width: 40px;
 }
 
 .popular-tags {
@@ -325,13 +448,13 @@ body {
   padding: 16px;
   background-color: #FFFFFF;
   width: 100%;
-  font-size: 16px;
 }
-.seccion7 h4, .seccion7 h3 {
+.seccion7 h3 {
   margin: 5px 0;
+  font-size: 20px;
 }
 .seccion7 p {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .conteiner-redes {
@@ -347,4 +470,42 @@ body {
 
 .itemIcono:hover {
   background-color: rgba(54, 67, 211, 0.4666666667);
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px #CCCCCC;
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+.other a {
+  color: #242424;
+  margin-left: 5px;
+}
+
+.otherHeader {
+  margin: 10px 0;
+}
+
+.otherItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.otherItem {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.otherItem:hover {
+  background-color: #EBECFC;
+}
+.otherItem:hover a {
+  text-decoration: underline;
+  color: #3B49DF;
 }/*# sourceMappingURL=main.css.map */

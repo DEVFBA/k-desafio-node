@@ -20,12 +20,14 @@
     }
 }
 .buttonCreateAcc{
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid $accent-text;//variable
     text-align: center;
-    line-height: 50px;
     cursor: pointer;
 }
 .buttonCreateAcc:hover{
@@ -41,17 +43,22 @@
 }
 
 .buttonLogIn{
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
     width: 100%;
     border-radius: 8px;
     text-align: center;
-    line-height: 50px;
     margin-top: 10px;
     cursor: pointer;
 }
 .buttonLogIn:hover{
     cursor: pointer;
-    background-color: #efefef;
+    background-color: $hoverColor;
+    a{
+        text-decoration-line: underline;
+    }
 }
 // .devCommunity{
 //     font-family: sans-serif;
