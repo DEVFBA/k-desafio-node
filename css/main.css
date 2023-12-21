@@ -474,7 +474,7 @@ a:visited {
 .tagCont:hover {
   background-color: rgba(59, 73, 223, 0.1);
   text-decoration: underline;
-  color: rgb(59, 73, 223);
+  background-color: #EBECFC;
 }
 .tagCont:hover a {
   text-decoration: none;
@@ -509,7 +509,7 @@ a:visited {
 }
 
 .itemIcono:hover {
-  background-color: rgba(54, 67, 211, 0.4666666667);
+  background-color: #EBECFC;
 }
 
 .other {
