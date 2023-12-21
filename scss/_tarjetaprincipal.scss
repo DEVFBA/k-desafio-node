@@ -83,3 +83,27 @@
         background-color: $hoverColor;
     }
 }
+
+.center-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    margin-top: 15px;
+}
+
+.center-button{
+    padding: 10px;
+    border-radius: 8px;
+    p{
+        font-size: 16px;
+    }
+
+}
+
+.center-button:hover{
+    background-color: white;
+    cursor: pointer;
+    p{
+        color: $accent-text;
+    }
+}

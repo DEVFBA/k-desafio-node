@@ -21,18 +21,14 @@
   border: 1px solid $accent-text;
   padding: 10px;
   border-radius: 8px;
-  a{
     color: $accent-text;
-  }
 }
 
 .botton-link:hover{
   background-color: $accent-text;
   cursor: pointer;
-  a{
     text-decoration-line: underline;
     color: white;
-  }
 }
 
 .login {

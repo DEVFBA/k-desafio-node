@@ -370,6 +370,29 @@ body {
   background-color: #EBECFC;
 }
 
+.center-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  margin-top: 15px;
+}
+
+.center-button {
+  padding: 10px;
+  border-radius: 8px;
+}
+.center-button p {
+  font-size: 16px;
+}
+
+.center-button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.center-button:hover p {
+  color: #3B49DF;
+}
+
 .container-flex-row {
   display: flex;
   flex-direction: row;
@@ -396,16 +419,12 @@ body {
   border: 1px solid #3B49DF;
   padding: 10px;
   border-radius: 8px;
-}
-.botton-link a {
   color: #3B49DF;
 }
 
 .botton-link:hover {
   background-color: #3B49DF;
   cursor: pointer;
-}
-.botton-link:hover a {
   text-decoration-line: underline;
   color: white;
 }
