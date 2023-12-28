@@ -465,15 +465,21 @@ body {
 }
 
 .botton-link {
+  display: flex;
+  justify-content: center;
   border: 1px solid #3B49DF;
   padding: 10px;
   border-radius: 8px;
+}
+.botton-link a {
   color: #3B49DF;
 }
 
 .botton-link:hover {
   background-color: #3B49DF;
   cursor: pointer;
+}
+.botton-link:hover a {
   text-decoration-line: underline;
   color: white;
 }

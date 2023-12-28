@@ -18,17 +18,23 @@
   padding: 16px;
 }
 .botton-link {
+  display: flex;
+  justify-content: center;
   border: 1px solid $accent-text;
   padding: 10px;
   border-radius: 8px;
+  a{
     color: $accent-text;
+  }
 }
 
 .botton-link:hover{
   background-color: $accent-text;
   cursor: pointer;
-    text-decoration-line: underline;
-    color: white;
+    a{
+      text-decoration-line: underline;
+      color: white;
+    }
 }
 
 .login {
