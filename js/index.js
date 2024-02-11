@@ -4,6 +4,7 @@
 
 import { fetchAPI } from './fetch-api.js';
 import { updateCardLS } from './update.js';
+import { create } from './create.js';
 
 
 /**
@@ -29,7 +30,7 @@ const post = {
 /**
  * Create
  */
-
+create()
 
 
 /**
