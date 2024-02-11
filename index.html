@@ -17,7 +17,6 @@
       <div class="containerNav">
         <nav class="container-flex-row navbar">
           <div class="container-flex-row">
-    
             <img class="imagen" src="./img/resized_logo_UQww2soKuUsjaOGNB38o.png">
             <div><input class="input-text" type="text" placeholder="Search..."></div>
           </div>
@@ -26,12 +25,51 @@
               <a href="">log in</a>
             </div>
             <div class="botton-link">
-              <a href="">create account</a>
+              <a href="">New post</a>
             </div>
           </div>
-    
-    
         </nav>
+      </div>
+      <div class="modal">
+        <p>Create new post</p>
+        <form action="/" class="form">
+          <label for="input-title" class="label">Title</label>
+          <input
+            type="text"
+            id="input-title"
+            class="input"
+          />
+          <label for="input-author" class="label">Author</label>
+          <input
+            type="text"
+            id="input-author"
+            class="input"
+          />
+          <label for="input-#" class="label">Hashtag</label>
+          <input
+            type="text"
+            id="input-#"
+            class="input"
+          />
+          <label for="input-text" class="label">Text</label>
+          <input
+            type="text"
+            id="input-text"
+            class="input"
+          />
+          <input
+            type="submit"
+            id="create"
+            value="Create"
+            class="input-button"
+          />
+          <input
+            type="submit"
+            id="cancel"
+            value="Cancel"
+            class="input-button"
+          />
+        </form>
       </div>
       <!-- Section Main -->
       <section class="main">
@@ -699,7 +737,7 @@
   
           </div>
           <!-- Center Section -->
-          <div class="center-section container flex-container-column">
+          <div class="center-section container flex-container-column" id="center-section">
 
             <div class="center-buttons">
               <div class="center-button">

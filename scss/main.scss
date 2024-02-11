@@ -94,6 +94,9 @@ body{
     .right-aside{
         display: none;
     }
+    .modal{
+        display: flex;
+    }
 }
 
 @import "cardAccount.scss";
@@ -105,3 +108,4 @@ body{
 @import "navbar";
 @import "redes";
 @import "other";
+@import "modal"

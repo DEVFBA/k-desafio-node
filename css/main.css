@@ -84,6 +84,9 @@ body {
   .right-aside {
     display: none;
   }
+  .modal {
+    display: flex;
+  }
 }
 .account-card {
   width: 100%;
@@ -603,4 +606,67 @@ a:visited {
 .otherItem:hover a {
   text-decoration: underline;
   color: #3B49DF;
+}
+
+.modal {
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+  width: 350px;
+}
+.modal p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: medium;
+  margin-bottom: 4px;
+}
+
+.input {
+  font-family: "Quicksand", sans-serif;
+  background-color: #EBECFC;
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form #create {
+  border: solid 1px #3B49DF;
+}
+.form #cancel {
+  border: none;
+}
+
+.input-button {
+  font-family: "Quicksand", sans-serif;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #3B49DF;
+  cursor: pointer;
+  font-size: medium;
+  height: 38px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#create:hover {
+  background-color: #3B49DF;
+  color: #FFFFFF;
+}
+
+#cancel:hover {
+  background-color: #EBECFC;
 }/*# sourceMappingURL=main.css.map */
