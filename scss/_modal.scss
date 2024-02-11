@@ -1,5 +1,5 @@
 .modal{
-  display: none;
+  //display: none;
   background-color: $bg-discuss;
   border-radius: 8px;
   font-family: "Quicksand", sans-serif;
@@ -61,4 +61,12 @@
 
 #cancel:hover{
   background-color: $hoverColor;
+}
+
+.show-modal{
+  display: block;
+}
+
+.no-show-modal{
+  display: none;
 }

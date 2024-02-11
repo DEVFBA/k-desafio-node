@@ -1,6 +1,4 @@
-const deleteCard = () => {
-    
-    const id = 987654;
+const deleteCard = (id) => {
 
     const cardToRemove = document.getElementById(id);
 
@@ -14,8 +12,6 @@ const deleteCard = () => {
 
 const deleteLocalStorage = (id) => {
 
-    console.log('Entre!!!');
-
     const localStorageData = JSON.parse(localStorage.data);
     const posts = localStorageData.posts;
 
@@ -26,7 +22,6 @@ const deleteLocalStorage = (id) => {
     console.log(indexToDelete);
 
     localStorageData.posts.splice(indexToDelete, 1);
-    //localStorageData.posts.push(post);
 
     localStorage.data = JSON.stringify(localStorageData);
 

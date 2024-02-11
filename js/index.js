@@ -7,6 +7,7 @@ import { updateCardLS } from './update.js';
 import { create } from './create.js';
 import { readCards } from './read.js';
 import { deleteCard } from './delete.js'; 
+//import { showPostsModal } from './actions.js';
 
 
 /**
@@ -27,17 +28,19 @@ const post = {
 	minRead: 7
 }
 
+const id = 987654;
+
 /**
  * Create
  */
-create()
+//create()
 
 
 /**
  * Read
  */
 
-readCards(post)
+readCards()
 
 
 
@@ -51,12 +54,35 @@ readCards(post)
  * Delete
  */
 
-//deleteCard();
+//deleteCard(id);
 
 /**
  * Fetch API
  */
 
-fetchAPI();
+//fetchAPI();
 
+/**
+ * HTML Elements
+ */
+
+const newPostBtn = document.getElementById('new-post');
+console.log(newPostBtn);
+
+/**
+ * Listeners
+ */
+
+const showPostsModal = (ev) => {
+
+    console.log('Showing');
+    ev.preventDefault();
+
+    const postsModal = document.getElementById('posts-modal');
+
+    postsModal.classList.add('show-modal');
+    postsModal.classList.remove('no-show-modal');
+}
+
+//newPostBtn.addEventListener('click', showPostsModal());
 

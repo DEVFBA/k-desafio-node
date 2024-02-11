@@ -1,3 +1,5 @@
+import { createHTMLElement } from "./html.js"; 
+
 const readCards = () => {
 
     const cards = JSON.parse(localStorage.data).posts;
@@ -8,201 +10,55 @@ const readCards = () => {
          * Create Elements
          */
     
-        const centerSection = document.getElementById('center-section');
-    
-        const principalCardDiv = document.createElement('div');
-        principalCardDiv.classList.add('principal-card');
-        principalCardDiv.setAttribute('id', cards[i].id);    
-    
-        const headDiv = document.createElement('div');
-        headDiv.classList.add('head');
-    
-        const headImage = document.createElement('img');
-        headImage.setAttribute('src', cards[i].image);
-        headImage.setAttribute('alt', 'imagen de la web');
-    
-        const contentCardDiv = document.createElement('div');
-        contentCardDiv.classList.add('content-card');
-    
-        const logoImageDiv = document.createElement('div');
-        logoImageDiv.classList.add('logo_image');
-    
-        const taipyLogoDiv = document.createElement('div');
-        taipyLogoDiv.classList.add('taipy-logo');
-    
-        const taipyLogoImage = document.createElement('img');
-        taipyLogoImage.setAttribute('alt', 'taipy logo');
-        taipyLogoImage.setAttribute('src', cards[i].profileImg1);
-    
-        const profileDiv = document.createElement('div');
-        profileDiv.classList.add('profile');
-    
-        const profileImg = document.createElement('img');
-        profileImg.setAttribute('src', cards[i].profileImg2);
-        profileImg.setAttribute('alt', 'profile');
-    
-        const nameDateDiv = document.createElement('div');
-        nameDateDiv.classList.add('name-date');
-    
-        const authorTag = document.createElement('h4');
-        authorTag.innerHTML = cards[i].author;
-    
-        const createDateTag = document.createElement('p');
-        createDateTag.innerHTML = cards[i].date;
-    
-        const contentCard2Div =  document.createElement('div');
-        contentCard2Div.classList.add('content-card2');
-    
-        const titleAnchor = document.createElement('a');
-        titleAnchor.setAttribute('href', '//dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo');
-    
-        const titleTag = document.createElement('h3');
-        titleTag.innerHTML = cards[i].title;
-    
-        const hashtagsDiv = document.createElement('div');
-        hashtagsDiv.classList.add('hashtags');
-    
-        const tagsMonochromeAnchor1 = document.createElement('a');
-        tagsMonochromeAnchor1.classList.add('tags-monochrome');
-        tagsMonochromeAnchor1.setAttribute('style', 'color: #1e38bb');
-        tagsMonochromeAnchor1.setAttribute('href', '/t/python');
-        tagsMonochromeAnchor1.innerHTML = 'python';
-    
-        const tagsColorSpan1 = document.createElement('span');
-        tagsColorSpan1.classList.add('tags__color');
-        tagsColorSpan1.innerHTML = '#';
-    
-        const tagsMonochromeAnchor2 = document.createElement('a');
-        tagsMonochromeAnchor2.classList.add('tags-monochrome');
-        tagsMonochromeAnchor2.setAttribute('style', 'color: #000000');
-        tagsMonochromeAnchor2.setAttribute('href', '/t/github');
-        tagsMonochromeAnchor2.innerHTML = 'github';
-    
-        const tagsColorSpan2 = document.createElement('span');
-        tagsColorSpan2.classList.add('tags__color');
-        tagsColorSpan2.innerHTML = '#';
+        const centerSection = document.getElementById('center-section'); 
         
-        const tagsMonochromeAnchor3 = document.createElement('a');
-        tagsMonochromeAnchor3.classList.add('tags-monochrome');
-        tagsMonochromeAnchor3.setAttribute('style', 'color: #af27f2');
-        tagsMonochromeAnchor3.setAttribute('href', '/t/coding');
-        tagsMonochromeAnchor3.innerHTML = 'coding';
-    
-        const tagsColorSpan3 = document.createElement('span');
-        tagsColorSpan3.classList.add('tags__color');
-        tagsColorSpan3.innerHTML = '#';
-        
-        const tagsMonochromeAnchor4 = document.createElement('a');
-        tagsMonochromeAnchor4.classList.add('tags-monochrome');
-        tagsMonochromeAnchor4.setAttribute('style', 'color: #890606');
-        tagsMonochromeAnchor4.setAttribute('href', '/t/programming');
-        tagsMonochromeAnchor4.innerHTML = 'programming';
-    
-        const tagsColorSpan4 = document.createElement('span');
-        tagsColorSpan4.classList.add('tags__color');
-        tagsColorSpan4.innerHTML = '#';
-    
-        const reactionsDiv = document.createElement('div');
-        reactionsDiv.classList.add('reactions');
-    
-        const emojisReactionDiv = document.createElement('div');
-        emojisReactionDiv.classList.add('emojis-reactions');
-        
-        const genericAnchor1 = document.createElement('a');
-        genericAnchor1.setAttribute('href', '#');
-    
-        const genericAnchor2 = document.createElement('a');
-        genericAnchor2.setAttribute('href', '#');
-    
-        const emojis2Div1 = document.createElement('div');
-        emojis2Div1.classList.add('emojis2');
-    
-        const emojis2Div2 = document.createElement('div');
-        emojis2Div2.classList.add('emojis2');
-    
-        const multipleReactionsIconsContainerSpan = document.createElement('span');
-        multipleReactionsIconsContainerSpan.classList.add('multiple_reactions_icons_container');
-        multipleReactionsIconsContainerSpan.setAttribute('dir', 'rtl');
-    
-        const crayonsIconContainerSpan1 = document.createElement('span');
-        crayonsIconContainerSpan1.classList.add('crayons_icon_container');
-    
-        const crayonsIconContainerSpan2 = document.createElement('span');
-        crayonsIconContainerSpan2.classList.add('crayons_icon_container');
-    
-        const crayonsIconContainerSpan3 = document.createElement('span');
-        crayonsIconContainerSpan3.classList.add('crayons_icon_container');
-    
-        const crayonsIconContainerSpan4 = document.createElement('span');
-        crayonsIconContainerSpan4.classList.add('crayons_icon_container');
-    
-        const crayonsIconContainerSpan5 = document.createElement('span');
-        crayonsIconContainerSpan5.classList.add('crayons_icon_container');
-    
-        const spanCrayonsContainerImg1 = document.createElement('img');
-        spanCrayonsContainerImg1.setAttribute('src', 'https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg');
-        spanCrayonsContainerImg1.setAttribute('width', '18');
-        spanCrayonsContainerImg1.setAttribute('height', '18');
-    
-        const spanCrayonsContainerImg2 = document.createElement('img');
-        spanCrayonsContainerImg2.setAttribute('src', 'https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg');
-        spanCrayonsContainerImg2.setAttribute('width', '18');
-        spanCrayonsContainerImg2.setAttribute('height', '18');
-    
-        const spanCrayonsContainerImg3 = document.createElement('img');
-        spanCrayonsContainerImg3.setAttribute('src', 'https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg');
-        spanCrayonsContainerImg3.setAttribute('width', '18');
-        spanCrayonsContainerImg3.setAttribute('height', '18');
-    
-        const spanCrayonsContainerImg4 = document.createElement('img');
-        spanCrayonsContainerImg4.setAttribute('src', 'https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg');
-        spanCrayonsContainerImg4.setAttribute('width', '18');
-        spanCrayonsContainerImg4.setAttribute('height', '18');
-    
-        const spanCrayonsContainerImg5 = document.createElement('img');
-        spanCrayonsContainerImg5.setAttribute('src', 'https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg');
-        spanCrayonsContainerImg5.setAttribute('width', '18');
-        spanCrayonsContainerImg5.setAttribute('height', '18');
-    
-        const reactionSpan = document.createElement('span');
-        reactionSpan.innerHTML = '132 reactions';
-    
-        const commentsSVG = document.createElement('span');
-        commentsSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-        commentsSVG.setAttribute('width', '24');
-        commentsSVG.setAttribute('height', '24');
-        commentsSVG.setAttribute('role', 'img');
-        commentsSVG.setAttribute('aria-labelledby', 'anvbv53iuk1dxb8rk4u2n14p1edhxh1v');
-        commentsSVG.classList.add('crayons-icon');
-    
-        const commentsTitle = document.createElement('title');
-        commentsTitle.setAttribute('id', 'anvbv53iuk1dxb8rk4u2n14p1edhxh1v');
-        commentsTitle.innerHTML = 'Comments';
-    
-        const commentsPath = document.createElement('path');
-        commentsPath.setAttribute('d', 'M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z');
-    
-        const commentsSpan = document.createElement('span');
-        commentsSpan.innerHTML = '17 comments';
-    
-        const saveDiv = document.createElement('div');
-        saveDiv.classList.add('save');
-    
-        const minutesReadTag = document.createElement('p');
-        minutesReadTag.innerHTML = '7 min read';
-    
-        const saveButton = document.createElement('button');
-        saveButton.classList.add('button-save');
-        saveButton.setAttribute('type', 'button');
-    
-        const saveSVG = document.createElement('svg');
-        saveSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-        saveSVG.setAttribute('width', '24');
-        saveSVG.setAttribute('height', '24');
-        saveSVG.setAttribute('aria-hidden', 'true');
-    
-        const savePath = document.createElement('path');
-        savePath.setAttribute('d', 'M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z');
+        const principalCardDiv = createHTMLElement('div', ['principal-card'], [['id', cards[i].id]]);
+        const headDiv = createHTMLElement('div', ['head']);
+        const headImage = createHTMLElement('img',null,[['src', cards[i].image], ['alt', 'imagen de la web']]);
+        const contentCardDiv = createHTMLElement('div',['content-card']);
+        const logoImageDiv = createHTMLElement('div',['logo_image']);
+        const taipyLogoDiv = createHTMLElement('div', ['taipy-logo']);
+        const taipyLogoImage = createHTMLElement('img', null, [['alt', 'taipy logo'], ['src', cards[i].profileImg1]]);
+        const profileDiv = createHTMLElement('div', ['profile']);
+        const profileImg = createHTMLElement('img', null, [['src', cards[i].profileImg2], ['alt', 'profile']]);
+        const nameDateDiv = createHTMLElement('div', ['name-date']);
+        const authorTag = createHTMLElement('h4', null, null, cards[i].author);
+        const createDateTag = createHTMLElement('p', null, null, cards[i].date);
+        const contentCard2Div = createHTMLElement('div', ['content-card2']);
+        const titleAnchor = document.createElement('a', null, ['href', '//dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo']);
+        const titleTag = createHTMLElement('h3', null, null, cards[i].title);
+        const hashtagsDiv = createHTMLElement('div', ['hashtags']);
+        const tagsMonochromeAnchor1 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #1e38bb'], ['href', '/t/python']], '#python');
+        const tagsMonochromeAnchor2 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #000000'], ['href', '/t/github']], '#github');
+        const tagsMonochromeAnchor3 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #af27f2'], ['href', '/t/coding']], '#coding');
+        const tagsMonochromeAnchor4 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #890606'], ['href', '/t/programming']], '#programming');
+        const reactionsDiv = createHTMLElement('div', ['reactions']);
+        const emojisReactionDiv = createHTMLElement('div', ['emojis-reactions']);
+        const genericAnchor1 = createHTMLElement('a', null, [['href', '#']]);
+        const genericAnchor2 = createHTMLElement('a', null, [['href', '#']]);
+        const emojis2Div1 = createHTMLElement('div', ['emojis2']);
+        const emojis2Div2 = createHTMLElement('div', ['emojis2']);
+        const multipleReactionsIconsContainerSpan = createHTMLElement('span', ['multiple_reactions_icons_container'], ['dir', 'rtl']);
+        const crayonsIconContainerSpan1 = createHTMLElement('span', ['crayons_icon_container']);
+        const crayonsIconContainerSpan2 = createHTMLElement('span', ['crayons_icon_container']);
+        const crayonsIconContainerSpan3 = createHTMLElement('span', ['crayons_icon_container']);
+        const crayonsIconContainerSpan4 = createHTMLElement('span', ['crayons_icon_container']);
+        const crayonsIconContainerSpan5 = createHTMLElement('span', ['crayons_icon_container']);
+        const spanCrayonsContainerImg1 = createHTMLElement('img', null, [['src', 'https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg'], ['width', '18'], ['height', '18']]);
+        const spanCrayonsContainerImg2 = createHTMLElement('img', null, [['src', 'https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg'], ['width', '18'], ['height', '18']]);
+        const spanCrayonsContainerImg3 = createHTMLElement('img', null, [['src', 'https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg'], ['width', '18'], ['height', '18']]);
+        const spanCrayonsContainerImg4 = createHTMLElement('img', null, [['src', 'https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg'], ['width', '18'], ['height', '18']]);
+        const spanCrayonsContainerImg5 = createHTMLElement('img', null, [['src', 'https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg'], ['width', '18'], ['height', '18']]);
+        const reactionSpan = createHTMLElement('span', null, null, '132 reactions');
+        const commentsSVG = createHTMLElement('svg', ['crayons-icon'], [['xmlns', 'http://www.w3.org/2000/svg'], ['width', '24'], ['height', '24'], ['role', 'img'], ['aria-labelledby', 'anvbv53iuk1dxb8rk4u2n14p1edhxh1v']]);
+        const commentsTitle = createHTMLElement('title', null, [['id', 'anvbv53iuk1dxb8rk4u2n14p1edhxh1v']], 'Comments');
+        const commentsPath = createHTMLElement('path', null, [['d', 'M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z']]);
+        const commentsSpan = createHTMLElement('span', null, null, '17 comments');
+        const saveDiv = createHTMLElement('div', ['save']);
+        const minutesReadTag = createHTMLElement('p', null, null, '7 min read');
+        const saveButton = createHTMLElement('button', ['button-save'], [['type', 'button']]);
+        const saveSVG = createHTMLElement('svg', null, [['xmlns', 'http://www.w3.org/2000/svg'], ['width', '24'], ['heigth', '24'], ['aria-hidden', 'true']]);
+        const savePath = createHTMLElement('path', null, [['d', 'M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z']]);
     
         /**
          * Append Elements
@@ -250,6 +106,7 @@ const readCards = () => {
                         emojis2Div2.append(commentsSVG);
                             commentsSVG.append(commentsTitle);
                             commentsSVG.append(commentsPath);
+                        emojis2Div2.append(commentsSpan);
                 reactionsDiv.append(saveDiv);
                     saveDiv.append(minutesReadTag);
                     saveDiv.append(saveButton);
