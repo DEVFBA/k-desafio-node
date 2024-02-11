@@ -4,6 +4,10 @@
 
 import { fetchAPI } from './fetch-api.js';
 import { updateCardLS } from './update.js';
+import { create } from './create.js';
+import { readCards } from './read.js';
+import { deleteCard } from './delete.js'; 
+//import { showPostsModal } from './actions.js';
 
 
 /**
@@ -12,31 +16,31 @@ import { updateCardLS } from './update.js';
 
 const post = {
 	id:   123456,
-	image:  'https://res.cloudinary.com/practicaldev/image/fetch/s--vwy4Bevt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vcmazu3qgcqavisfr6f8.gif',
-	profileImg1: 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8gYXd8Q--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/7841/eb7a94b7-7bd9-4097-b7e9-132785adc6db.png',
-	profileImg2: 'https://res.cloudinary.com/practicaldev/image/fetch/s--ZMDQfkJE--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1177677/4947a9f8-ba30-4008-9f77-4b08c5b1c901.jpg',
+	image:  'https://res.cloudinary.com/practicaldev/image/fetch/s--wzgGMCLs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qpdtjnt4fnuwag8noec8.png',
+	profileImg1: 'https://media.dev.to/cdn-cgi/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F1%2Fd908a186-5651-4a5a-9f76-15200bc6801f.jpg',
+	profileImg2: 'https://media.dev.to/cdn-cgi/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F05ce9c9d-43b7-4823-a423-f875a94edc27.jpg',
 	date: '2024-02-09',
 	author: 'Autor del Post',
-	title: 'Python Programming Language',
+	title: 'Tarjeta Leida',
 	hashtags: '#python #github #coding #programming',
 	reactions: 132,
-	comments: 17,
+	comments: 25,
 	minRead: 7
 }
 
-
+const id = 987654;
 
 /**
  * Create
  */
-
+//create()
 
 
 /**
  * Read
  */
 
-
+readCards()
 
 
 
@@ -44,18 +48,41 @@ const post = {
  * Update
  */
 
-updateCardLS();
+//updateCardLS(post);
 
 /**
  * Delete
  */
 
-
+//deleteCard(id);
 
 /**
  * Fetch API
  */
 
-fetchAPI();
+//fetchAPI();
 
+/**
+ * HTML Elements
+ */
+
+const newPostBtn = document.getElementById('new-post');
+console.log(newPostBtn);
+
+/**
+ * Listeners
+ */
+
+const showPostsModal = (ev) => {
+
+    console.log('Showing');
+    ev.preventDefault();
+
+    const postsModal = document.getElementById('posts-modal');
+
+    postsModal.classList.add('show-modal');
+    postsModal.classList.remove('no-show-modal');
+}
+
+//newPostBtn.addEventListener('click', showPostsModal());
 

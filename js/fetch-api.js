@@ -11,7 +11,7 @@ const fetchAPI = async() => {
 
     // console.log(data);
 
-    console.log('Fetching');
+    
 
 }
 
