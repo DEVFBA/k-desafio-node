@@ -2,10 +2,6 @@ const readCards = () => {
 
     const cards = JSON.parse(localStorage.data).posts;
 
-    console.log(JSON.parse(localStorage.data));
-
-    console.log(cards);
-
     for(let i = 0; i < cards.length; i++){
 
         /**
@@ -15,7 +11,8 @@ const readCards = () => {
         const centerSection = document.getElementById('center-section');
     
         const principalCardDiv = document.createElement('div');
-        principalCardDiv.classList.add('principal-card');    
+        principalCardDiv.classList.add('principal-card');
+        principalCardDiv.setAttribute('id', cards[i].id);    
     
         const headDiv = document.createElement('div');
         headDiv.classList.add('head');

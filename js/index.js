@@ -5,6 +5,7 @@
 import { fetchAPI } from './fetch-api.js';
 import { updateCardLS } from './update.js';
 import { readCards } from './read.js';
+import { deleteCard } from './delete.js'; 
 
 
 /**
@@ -43,13 +44,13 @@ readCards(post)
  * Update
  */
 
-updateCardLS(post);
+//updateCardLS(post);
 
 /**
  * Delete
  */
 
-
+//deleteCard();
 
 /**
  * Fetch API

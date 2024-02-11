@@ -1,7 +1,5 @@
 const updateCardLS = (post) => {
 
-    console.log('Updating Local Storage');
-
     const localStorageData = JSON.parse(localStorage.data);
     const posts = localStorageData.posts;
 
