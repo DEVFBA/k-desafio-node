@@ -32,29 +32,26 @@ const readCards = (mode, date, title) => {
         }
 
         if(mode === 1){
-
-            console.log(date);
     
             cards = cards.filter((post) => {
-                console.log('filtering')
-
-                console.log(post.date === date);
 
                 return post.date === date;
-            })
-            
-            console.log('By Date');
 
-        } else {
-    
-            console.log('By Title');
+            });
+
+        } else if(mode === 2){
+
+            cards = cards.filter((post) => {
+
+                console.log(post.title.includes(title));
+
+                return post.title.includes(title);
+
+            });
     
         }
 
     }
-
-
-    console.log(cards);
 
     if(cards){
 
