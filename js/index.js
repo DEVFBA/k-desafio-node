@@ -64,7 +64,7 @@ readCards(0);
  * Fetch API
  */
 
-//fetchAPI();
+fetchAPI();
 
 /**
  * HTML Elements
