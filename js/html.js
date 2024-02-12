@@ -1,3 +1,5 @@
+//import {deleteCard} from './delete.js';
+
 const createHTMLElement = (element, classes, attributes, innerHTML) => {
 
 const elementCreated = document.createElement(element);
@@ -22,6 +24,9 @@ return elementCreated;
 
 const createPrincipalCard = (centerSection, id, principalImage, profileImage1, profileImage2, author, date, title, hashtags) =>{
 
+    /**
+     * Create Elements
+     */
     const principalCardDiv = createHTMLElement('div', ['principal-card'], [['id', id]]);
     const headDiv = createHTMLElement('div', ['head']);
     const headImage = createHTMLElement('img',null,[['src', principalImage], ['alt', 'imagen de la web']]);
@@ -35,7 +40,7 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
     const authorTag = createHTMLElement('h4', null, null, author);
     const createDateTag = createHTMLElement('p', null, null, date);
     const contentCard2Div = createHTMLElement('div', ['content-card2']);
-    const titleAnchor = document.createElement('a', null, ['href', '//dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo']);
+    const titleAnchor = createHTMLElement('a', null, [['href', '//dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo']]);
     const titleTag = createHTMLElement('h3', null, null, title);
     const hashtagsDiv = createHTMLElement('div', ['hashtags']);
     const tagsMonochromeAnchor1 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #1e38bb'], ['href', '/t/python']], hashtags);
@@ -69,7 +74,11 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
     const saveButton = createHTMLElement('button', ['button-save'], [['type', 'button']]);
     const saveSVG = createHTMLElement('svg', null, [['xmlns', 'http://www.w3.org/2000/svg'], ['width', '24'], ['heigth', '24'], ['aria-hidden', 'true']]);
     const savePath = createHTMLElement('path', null, [['d', 'M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z']]);
+    const deleteBtn = createHTMLElement('button', null, [['id', 'delete-button'], ['onclick', `deleteCard(${id})`]], 'Delete');
 
+    /**
+     * Append Elements
+     */
     centerSection.prepend(principalCardDiv);
         
                 principalCardDiv.append(headDiv);
@@ -114,7 +123,8 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
                                 commentsSVG.append(commentsPath);
                             emojis2Div2.append(commentsSpan);
                     reactionsDiv.append(saveDiv);
-                        saveDiv.append(minutesReadTag);
+                        //saveDiv.append(minutesReadTag);
+                        saveDiv.append(deleteBtn);
                         saveDiv.append(saveButton);
                             saveButton.append(saveSVG);
                                 saveSVG.append(savePath);

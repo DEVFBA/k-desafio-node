@@ -27,4 +27,4 @@ const deleteLocalStorage = (id) => {
 
 }
 
-export { deleteCard };
+//export { deleteCard };
