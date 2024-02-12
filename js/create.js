@@ -1,9 +1,9 @@
-export { create};
+export { create };
 
-const create = ()=> {
-    const postData = JSON.parse(localStorage.data)
-    const posts = postData.posts
-    console.log(posts)
+const create = (titles)=> {
+    // const postData = JSON.parse(localStorage.data)
+    // const posts = postData.posts
+    // console.log(posts)
         const MainDiv = document.createElement('div')
         MainDiv.setAttribute('class', 'principal-card')
         const divHead = document.createElement('div')
@@ -51,7 +51,7 @@ const create = ()=> {
         a1.href = "//dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo"
         divContentCard2.append(a1)
         const h3 = document.createElement('h3')
-        h3.textContent = "Top 42 🐍 Python libraries you need to know 🦾"
+        h3.textContent = titles
         a1.append(h3)
         const divHashtags = document.createElement('div')
         divHashtags.setAttribute('class', 'hashtags')
@@ -200,4 +200,6 @@ const create = ()=> {
 
         divSave.append(p2)
         divSave.append(button)
+        const centerSection = document.getElementById('centerSection')
+        centerSection.append(MainDiv)
 }

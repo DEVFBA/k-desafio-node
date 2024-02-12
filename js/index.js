@@ -10,6 +10,7 @@ import { deleteCard } from './delete.js';
 //import { showPostsModal } from './actions.js';
 
 
+
 /**
  * Dummy Object
  */
@@ -69,9 +70,31 @@ readCards(0);
  */
 
 const newPostBtn = document.getElementById('new-post');
+const btnSearch = document.getElementById('search')
+const inputSearch = document.getElementById('inputSearch')
+inputSearch.addEventListener('change', () => {
+	inputSearch.value
+	console.log(inputSearch.value)
+	readCards(2, null, `${inputSearch.value}` )
+})
+
+const inputTitle = document.getElementById('input-title')
+const inputAuthor = document.getElementById('input-author')
+const inputHashtags = document.getElementById('input-#')
+const inputText = document.getElementById('input-text')
+const btnCreate = document.getElementById('create')
+btnCreate.addEventListener('click', ()=> {
+	console.log(inputTitle.value)
+	console.log(inputAuthor.value)
+	console.log(inputHashtags.value)
+	console.log(inputText.value)
+	create(inputTitle.value)
+
+})
 
 /**
  * Listeners
+ * 
  */
 
 const showPostsModal = (ev) => {

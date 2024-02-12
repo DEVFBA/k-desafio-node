@@ -18,7 +18,8 @@
         <nav class="container-flex-row navbar">
           <div class="container-flex-row">
             <img class="imagen" src="./img/resized_logo_UQww2soKuUsjaOGNB38o.png">
-            <div><input class="input-text" type="text" placeholder="Search..."></div>
+            <div><input class="input-text" type="text" placeholder="Search..." id="inputSearch" value=""></div>
+            <button id = "search">Search</button>
           </div>
           <div class="container-flex-row">
             <div class="login">
@@ -38,33 +39,37 @@
             type="text"
             id="input-title"
             class="input"
+            value=""
           />
           <label for="input-author" class="label">Author</label>
           <input
             type="text"
             id="input-author"
             class="input"
+            value=""
           />
           <label for="input-#" class="label">Hashtag</label>
           <input
             type="text"
             id="input-#"
             class="input"
+            value=""
           />
           <label for="input-text" class="label">Text</label>
           <input
             type="text"
             id="input-text"
             class="input"
+            value=""
           />
           <input
-            type="submit"
+            type="button"
             id="create"
             value="Create"
             class="input-button"
           />
           <input
-            type="submit"
+            type="button"
             id="cancel"
             value="Cancel"
             class="input-button"
@@ -737,7 +742,7 @@
   
           </div>
           <!-- Center Section -->
-          <div class="center-section container flex-container-column">
+          <div class="center-section container flex-container-column" id="centerSection">
             <div class="center-buttons">
               <div class="center-button">
                 <p>Relevant</p>
