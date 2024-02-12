@@ -40,7 +40,9 @@ const id = 987654;
  * Read
  */
 
-readCards()
+readCards(0);
+//readCards(1, '2024-02-11');
+//readCards(2, 'Python');
 
 
 
@@ -67,7 +69,6 @@ readCards()
  */
 
 const newPostBtn = document.getElementById('new-post');
-console.log(newPostBtn);
 
 /**
  * Listeners
