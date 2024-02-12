@@ -26,9 +26,9 @@
   border: none;
   border-radius: 8px;
   height: 32px;
-  // font-size: var(--md);
-  padding: 4px;
+  padding: 4px 10px;
   margin-bottom: 12px;
+  
 }
 
 .form {
@@ -43,7 +43,7 @@
 }
 
 .input-button {
-  font-family: "Quicksand", sans-serif;
+  // font-family: "Quicksand", sans-serif;
   border-radius: 8px;
   background-color: $bg-discuss;
   color: $accent-text;

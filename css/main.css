@@ -320,6 +320,9 @@ body {
 .content-card h4:hover {
   background-color: #E9E9E9;
 }
+.content-card .name-date {
+  padding-left: 15px;
+}
 
 .content-card2 {
   padding: 16px 60px;
@@ -351,11 +354,11 @@ body {
 
 .profile {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 30px;
+  left: 30px;
 }
 .profile img {
-  max-width: 20px;
+  max-width: 25px;
   border: solid 2px white;
 }
 
@@ -374,6 +377,7 @@ body {
 }
 
 .center-buttons {
+  align-items: center;
   display: flex;
   flex-direction: row;
   width: 96%;
@@ -396,9 +400,16 @@ body {
   color: #3B49DF;
 }
 
+#filter-date {
+  border-radius: 5px;
+  border: solid 1px;
+  padding: 5px;
+}
+
 .reactions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 40px;
   padding: 20px;
 }
@@ -420,6 +431,9 @@ body {
 .emojis2 {
   display: flex;
   align-items: center;
+}
+.emojis2 span {
+  color: #3B49DF;
 }
 
 .save {
@@ -445,9 +459,27 @@ body {
   font-size: 13px;
 }
 
+#delete-button {
+  border: none;
+  color: #3B49DF;
+  outline: none;
+  padding: 5px 10px;
+  background: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 30px;
+  font-size: medium;
+}
+
+#delete-button:hover {
+  background-color: #EBECFC;
+  cursor: pointer;
+}
+
 .container-flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .navbar {
@@ -460,11 +492,11 @@ body {
 
 .input-text {
   width: 400px;
-  height: 30px;
+  height: 35px;
   margin: 0 15px;
   border-radius: 8px;
-  border: solid 1px #575757;
-  padding: 16px;
+  border: solid 1px #242424;
+  padding: 10px;
 }
 
 .botton-link {
@@ -537,6 +569,26 @@ a:visited {
 .tagCont:hover a {
   text-decoration: none;
   color: #3B49DF;
+}
+
+#search, #reset {
+  margin: 0 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: #FFFFFF;
+  color: #3B49DF;
+  cursor: pointer;
+  font-size: medium;
+  padding: 10px;
+  width: 100%;
+}
+
+#search:hover {
+  background-color: #EBECFC;
+}
+
+#reset:hover {
+  background-color: #EBECFC;
 }
 
 .seccion7 {
@@ -634,7 +686,7 @@ a:visited {
   border: none;
   border-radius: 8px;
   height: 32px;
-  padding: 4px;
+  padding: 4px 10px;
   margin-bottom: 12px;
 }
 
@@ -650,7 +702,6 @@ a:visited {
 }
 
 .input-button {
-  font-family: "Quicksand", sans-serif;
   border-radius: 8px;
   background-color: #FFFFFF;
   color: #3B49DF;

@@ -1,6 +1,7 @@
 .container-flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .navbar {
   justify-content: space-between;
@@ -11,11 +12,11 @@
 }
 .input-text {
   width: 400px;
-  height: 30px;
+  height: 35px;
   margin: 0 15px;
   border-radius: 8px;
-  border: solid 1px $secondary-text;
-  padding: 16px;
+  border: solid 1px $main-text;
+  padding: 10px;
 }
 .botton-link {
   display: flex;
@@ -65,9 +66,6 @@
   // padding: 1px;
   height: 200px;
   overflow-y: scroll;
-
-
-
 }
 .tagCont{
   width: 100%;
@@ -93,6 +91,26 @@ a:visited {
      color: $accent-text;
  }
 
+}
+
+#search, #reset{
+  margin: 0 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: $bg-discuss;
+  color: $accent-text;
+  cursor: pointer;
+  font-size: medium;
+  padding: 10px;
+  width: 100%;
+}
+
+#search:hover{
+  background-color: $hoverColor;
+}
+
+#reset:hover{
+  background-color: $hoverColor;
 }
 
 .seccion7 {
