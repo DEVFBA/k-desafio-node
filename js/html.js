@@ -1,4 +1,3 @@
-//import {deleteCard} from './delete.js';
 
 const createHTMLElement = (element, classes, attributes, innerHTML) => {
 
@@ -44,9 +43,6 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
     const titleTag = createHTMLElement('h3', null, null, title);
     const hashtagsDiv = createHTMLElement('div', ['hashtags']);
     const tagsMonochromeAnchor1 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #1e38bb'], ['href', '/t/python']], hashtags);
-    // const tagsMonochromeAnchor2 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #000000'], ['href', '/t/github']], '#github');
-    // const tagsMonochromeAnchor3 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #af27f2'], ['href', '/t/coding']], '#coding');
-    // const tagsMonochromeAnchor4 = createHTMLElement('a', ['tags-monochrome'], [['style', 'color: #890606'], ['href', '/t/programming']], '#programming');
     const reactionsDiv = createHTMLElement('div', ['reactions']);
     const emojisReactionDiv = createHTMLElement('div', ['emojis-reactions']);
     const genericAnchor1 = createHTMLElement('a', null, [['href', '#']]);
@@ -98,9 +94,6 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
                         titleAnchor.append(titleTag);
                     contentCard2Div.append(hashtagsDiv);
                         hashtagsDiv.append(tagsMonochromeAnchor1);
-                        // hashtagsDiv.append(tagsMonochromeAnchor2);
-                        // hashtagsDiv.append(tagsMonochromeAnchor3);
-                        // hashtagsDiv.append(tagsMonochromeAnchor4);
                 principalCardDiv.append(reactionsDiv);
                     reactionsDiv.append(genericAnchor1);
                         genericAnchor1.append(emojis2Div1);
@@ -123,7 +116,6 @@ const createPrincipalCard = (centerSection, id, principalImage, profileImage1, p
                                 commentsSVG.append(commentsPath);
                             emojis2Div2.append(commentsSpan);
                     reactionsDiv.append(saveDiv);
-                        //saveDiv.append(minutesReadTag);
                         saveDiv.append(deleteBtn);
                         saveDiv.append(saveButton);
                             saveButton.append(saveSVG);
