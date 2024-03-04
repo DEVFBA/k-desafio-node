@@ -1,4 +1,4 @@
-import { createHTMLElement, createPrincipalCard } from "./html.js"; 
+import { createPrincipalCard } from "./html.js"; 
 
 /**
  * @param mode  

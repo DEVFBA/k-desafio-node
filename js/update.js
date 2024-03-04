@@ -12,7 +12,7 @@ const updateCardLS = (post) => {
 
     localStorage.data = JSON.stringify(localStorageData);
 
-    //window.location.reload();
+    window.location.reload();
 
 }
 
