@@ -33,12 +33,14 @@ body{
     justify-content: center;
     background-color: $bgMain;
     max-width: 1280px;
+    width: 100%;
 }
 
 .main-flex-container {
     display: flex;
     justify-content: space-around;
     background-color: $bgMain;
+    width: 100%;
 }
 
 .flex-container-column {
@@ -59,6 +61,7 @@ body{
     display: flex;
     max-width: 250px;
     background-color: $bgMain;
+    padding-left: 10px
 }
 
 .right-aside{
@@ -67,6 +70,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: $bgMain;
+    padding-right: 10px;
 }
 
 .center-section{
@@ -74,6 +78,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: $bgMain;
+    width: 100%;
 }
 
 .containerNav{
@@ -94,6 +99,9 @@ body{
     .right-aside{
         display: none;
     }
+    .modal{
+        display: flex;
+    }
 }
 
 @import "cardAccount.scss";
@@ -105,3 +113,4 @@ body{
 @import "navbar";
 @import "redes";
 @import "other";
+@import "modal"
